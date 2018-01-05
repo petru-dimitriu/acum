@@ -1,0 +1,55 @@
+<html>
+<head>
+  <meta charset ="utf-8">
+  <link rel="stylesheet" href="style.css"></style>
+  <script src="basic_animations.js"></script>
+  <script src="modules/currentTime.js"></script>
+  <script src="modules/brasovLive.js"></script>
+  <script src="modules/agerpres.js"></script>
+  <script src="modules/bitcoin.js"></script>
+  <script src="modules/iss.js"></script>
+  <script>
+    function switchModule () {
+        modules[i].exit();
+        setTimeout(function() {
+          i = (i + 1) % modules.length;
+          modules[i].init();
+          setTimeout(switchModule,modules[i].preferredDuration);
+        },800);
+      }
+
+    function start() {
+      modules = [issLive, bitcoin, agerpres, brasovLive, currentTime];
+      i = 0;
+      modules[0].init();
+      setTimeout(switchModule,modules[i].preferredDuration);
+    }
+  </script>
+</head>
+<body onload="start()">
+
+  <div id = "backgroundImage">
+    <img id ="bgImg" style="position:absolute" src="modules/clock.png"></img>
+  </div>
+
+  <div id = "slideTitle">
+      Title
+  </div>
+  <div id = "titleContainer">
+    <div id = "title">
+        <div id = "before"></div>
+        <div id = "text">Sample title</div>
+        <div id = "after"></div>
+    </div>
+  </div>
+
+  <div id = "contents">
+    <p class ="label" id="first">Test</p>
+    <p class ="label" id="second">Another test! Lorem ipsum!</p>
+  </div>
+
+  <div id = "topright">
+    <p class ="label" id ="rightlabel">Hello!!!</p>
+  </div>
+</body>
+</html>
