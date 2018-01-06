@@ -2,7 +2,7 @@ issLive = {
     init: function () {
         setTopRightContents(`
             <p class = "label" id ="live" style="background-color:red;"></p><br><br><br>
-            <p class = "label" id ="loc">International Space Station</p>
+            <p class = "label" id ="loc">Stația Spațială Internațională</p>
         `);
         setContents(`
         <div id="webviewContainer">
@@ -10,7 +10,7 @@ issLive = {
         </div>
         `);
         changeLabelTextWithAnimation("live","LIVE");
-        changeLabelTextWithAnimation("loc","International Space Station");
+        changeLabelTextWithAnimation("loc","Stația Spațială Internațională");
         issLive.liveBlinkingInterval = setInterval(() => { 
             $("#live").css("opacity",1);
             $("#live").animate({opacity: 0.7},500);

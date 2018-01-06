@@ -96,6 +96,7 @@ body, textarea
 	font-family: RobotoBlack;
 	font-size: 15vh;
 	text-shadow: 1px 1px 5px rgba(150, 150, 150, 1);
+	height: 17vh;
 }
 
 #slideTitle.animated {

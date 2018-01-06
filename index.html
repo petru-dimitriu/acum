@@ -8,6 +8,8 @@
   <script src="modules/agerpres.js"></script>
   <script src="modules/bitcoin.js"></script>
   <script src="modules/iss.js"></script>
+  <script src="modules/meteo_anm.js"></script>
+  <script src="modules/iasiLive.js"></script>
   <script>
     function switchModule () {
         modules[i].exit();
@@ -19,7 +21,7 @@
       }
 
     function start() {
-      modules = [issLive, bitcoin, agerpres, brasovLive, currentTime];
+      modules = [iasiLive, meteo_anm, issLive, bitcoin, agerpres, brasovLive, currentTime];
       i = 0;
       modules[0].init();
       setTimeout(switchModule,modules[i].preferredDuration);

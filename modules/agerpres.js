@@ -2,7 +2,7 @@ agerpres = {
     init: function () {
         xml2js = require('xml2js');
 
-        animateTitleIn("News via AGERPRES");
+        animateTitleIn("Știri via AGERPRES");
         animateBackground("#011857");
 
         setTimeout(function()
@@ -11,7 +11,6 @@ agerpres = {
         <p class = "label" id ="newstitle" 
         style="overflow:visible; height:auto; font-size:5vw; position:fixed; bottom: 5px;" ></p>
         `);
-        displaySlideTitle("News");
         
         // get data
         var xhttp = new XMLHttpRequest();
@@ -21,6 +20,7 @@ agerpres = {
                 function(err, result)
                 {
                     animateTitleOut();
+                    displaySlideTitle("Știri");
                     newsData = result;
                     agerpres.newsDataIndex = 0;
                     agerpres.cycle();

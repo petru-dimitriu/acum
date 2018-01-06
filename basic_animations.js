@@ -3,7 +3,6 @@ require('jquery-ui');
 
 function animateTitleIn(newTitle)
 {
-    //console.log($("#title").css("opacity"));
     $("#title #text").show();
     $("#title #text").html(newTitle);
     $("#title").css("height","auto");
@@ -31,7 +30,7 @@ function displaySlideTitle(newTitle, color)
 
 function animateSlideTitleOut()
 {
-    $("#slideTitle").animate({width: 0}, 500);
+    $("#slideTitle").animate({width: 0, color: 'white'}, 500);
 }
 
 function changeBackgroundColor(color)
