@@ -10,6 +10,9 @@ It is modular and sports for now 7 modules:
 * iss - live video from International Space Station (via NASA)
 * meteo_anm - live weather info for Romania from ANM
 
+## Screen capture
+![Capture](https://raw.githubusercontent.com/petru-dimitriu/acum/master/screen/recor.gif)
+
 ## Installation
 `npm install` should be enough.
 

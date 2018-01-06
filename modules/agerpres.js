@@ -28,7 +28,7 @@ agerpres = {
                 });
             }
         };
-        xhttp.open("GET", "https://www.agerpres.ro/home.rss", true);
+        xhttp.open("GET", "https://www.agerpres.ro/cultura.rss", true);
         xhttp.send();
 
         },500);
