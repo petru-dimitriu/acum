@@ -11,7 +11,7 @@ It is modular and sports for now 7 modules:
 * meteo_anm - live weather info for Romania from ANM
 
 ## Screen capture
-![Capture](https://raw.githubusercontent.com/petru-dimitriu/acum/master/screen/recor.gif)
+![Capture](https://raw.githubusercontent.com/petru-dimitriu/acum/master/screen/record.gif)
 
 ## Installation
 `npm install` should be enough.

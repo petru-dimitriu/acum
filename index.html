@@ -16,18 +16,15 @@
         setTimeout(function() {
           i = (i + 1) % modules.length;
           modules[i].init();
-          setTimeout(switchModule,4000);
-          //setTimeout(switchModule,modules[i].preferredDuration);
+          setTimeout(switchModule,modules[i].preferredDuration);
         },800);
       }
 
     function start() {
-      //modules = [iasiLive, meteo_anm, issLive, bitcoin, agerpres, brasovLive, currentTime];
-      modules = [iasiLive, bitcoin, agerpres, currentTime];
+      modules = [iasiLive, meteo_anm, issLive, bitcoin, agerpres, brasovLive, currentTime];
       i = 0;
       modules[0].init();
-      //setTimeout(switchModule,modules[i].preferredDuration);
-      setTimeout(switchModule,4500);
+      setTimeout(switchModule,modules[i].preferredDuration);
     }
   </script>
 </head>
